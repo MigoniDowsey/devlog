@@ -1,0 +1,296 @@
+.section {
+  padding: 5rem 2rem;
+  background: var(--section-bg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, var(--primary-pink), var(--accent-green));
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.showcase {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.featured,
+.geekWeek {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+}
+
+.featured h3,
+.geekWeek h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-green);
+}
+
+.projectDesc {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech {
+  background: linear-gradient(135deg, var(--primary-pink), var(--accent-green));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.impact {
+  background: var(--section-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.impact strong {
+  color: var(--primary-pink);
+}
+
+.tryItBtn {
+  background: linear-gradient(135deg, var(--primary-pink), var(--accent-green));
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.tryItBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 209, 220, 0.4);
+}
+
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.achievement {
+  background: var(--section-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.metric {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-pink);
+  margin-bottom: 0.5rem;
+}
+
+.achievement p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.skillsSection {
+  margin-bottom: 4rem;
+}
+
+.skillsSection h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skillCard {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent-green);
+}
+
+.skillCard h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-green);
+}
+
+.skillCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skillCard li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.skillCard li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-pink);
+  font-weight: bold;
+}
+
+.journey h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.monthLabel {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-pink);
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid var(--border-color);
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skillBadge {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.skillBadge:hover {
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+  transform: translateY(-2px);
+}
+
+.growthStory {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+}
+
+.growthStory h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-pink);
+}
+
+.growthStory p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.growthStory p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .featured,
+  .geekWeek {
+    padding: 1.5rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .timelineItem {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .achievements {
+    grid-template-columns: 1fr;
+  }
+}

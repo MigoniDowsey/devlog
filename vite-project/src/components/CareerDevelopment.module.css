@@ -1,0 +1,193 @@
+.section {
+  padding: 5rem 2rem;
+  background: var(--bg-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, var(--primary-pink), var(--accent-green));
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.blogPost {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+}
+
+.intro {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.lead {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.article {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.article:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.article h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-pink);
+  font-weight: 600;
+}
+
+.article h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.article p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.article p:last-child {
+  margin-bottom: 0;
+}
+
+.article strong {
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.article ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.article ul li {
+  padding: 0.75rem 0 0.75rem 2rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.article ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-pink);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.roleCard {
+  background: var(--section-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--accent-green);
+}
+
+.roleCard:last-child {
+  margin-bottom: 0;
+}
+
+.roleCard h4 {
+  margin-bottom: 1rem;
+}
+
+.roleCard p {
+  margin-bottom: 0;
+}
+
+.goals {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.goalSection {
+  background: var(--section-bg);
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.goalSection h4 {
+  font-size: 1.3rem;
+  color: var(--primary-pink);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.goalSection ul {
+  margin: 0;
+}
+
+.goalSection ul li {
+  padding: 0.75rem 0 0.75rem 2rem;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .blogPost {
+    padding: 2rem 1.5rem;
+  }
+
+  .lead {
+    font-size: 1.15rem;
+  }
+
+  .article h3 {
+    font-size: 1.5rem;
+  }
+
+  .article p {
+    font-size: 1rem;
+  }
+
+  .roleCard,
+  .goalSection {
+    padding: 1.5rem;
+  }
+}
