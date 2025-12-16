@@ -22,18 +22,59 @@ function Technology() {
 
   const learningJourney = [
     {
-      month: 'September',
-      skills: ['UI/UX design stories', 'Intro to Power BI', 'Data modeling', 'Design thinking fundamentals']
+      phase: 'Weeks 1-3',
+      title: 'Foundation & Discovery',
+      focus: 'Design Thinking & Data Fundamentals',
+      skills: [
+        'UI/UX design principles & user stories',
+        'Power BI introduction & dashboards',
+        'Data modeling & analysis fundamentals',
+        'Design thinking methodology',
+        'Agile sprint planning basics'
+      ],
+      milestone: 'Built first data visualization dashboard'
     },
     {
-      month: 'October',
-      skills: ['Power BI visualizations', 'Functions & error handling', 'Azure SQL connections', 
-               'HTTP requests/responses', 'SQL joins & aggregations', 'AI fundamentals']
+      phase: 'Weeks 4-7',
+      title: 'Technical Development',
+      focus: 'Backend Systems & Cloud Integration',
+      skills: [
+        'Power BI advanced visualizations & DAX',
+        'JavaScript functions & error handling',
+        'Azure SQL database connections',
+        'RESTful APIs & HTTP protocols',
+        'SQL joins, queries & aggregations',
+        'AI & Machine Learning fundamentals'
+      ],
+      milestone: 'Integrated Azure services with data pipelines'
     },
     {
-      month: 'November',
-      skills: ['React UI development', 'Working with APIs', 'Frontend Testing', 
-               'Component architecture', 'State management']
+      phase: 'Weeks 8-11',
+      title: 'Full-Stack Implementation',
+      focus: 'Modern Frontend & API Integration',
+      skills: [
+        'React component architecture',
+        'State management & hooks',
+        'API integration & data fetching',
+        'Frontend unit & integration testing',
+        'Git workflow & version control',
+        'Responsive design patterns'
+      ],
+      milestone: 'Deployed production-ready React application'
+    },
+    {
+      phase: 'Weeks 12-14',
+      title: 'Client Project Delivery',
+      focus: 'United Airlines - Sentiment Analysis Platform',
+      skills: [
+        'End-to-end project management',
+        'Stakeholder presentations & communication',
+        'User acceptance testing',
+        'Production deployment & monitoring',
+        'Technical documentation',
+        'Team leadership & Agile ceremonies'
+      ],
+      milestone: 'Delivered enterprise solution to Fortune 500 client'
     }
   ]
 
@@ -114,15 +155,34 @@ function Technology() {
         </div>
 
         <div className={styles.journey}>
-          <h3>Learning Journey</h3>
+          <h3>14-Week Technical Journey</h3>
+          <p className={styles.journeySubtitle}>
+            From fundamentals to enterprise delivery — building production-grade solutions through structured sprints
+          </p>
           <div className={styles.timeline}>
-            {learningJourney.map((month, idx) => (
+            {learningJourney.map((phase, idx) => (
               <div key={idx} className={styles.timelineItem}>
-                <div className={styles.monthLabel}>{month.month}</div>
-                <div className={styles.skillsList}>
-                  {month.skills.map((skill, i) => (
-                    <span key={i} className={styles.skillBadge}>{skill}</span>
-                  ))}
+                <div className={styles.phaseHeader}>
+                  <span className={styles.phaseNumber}>{phase.phase}</span>
+                  <h4 className={styles.phaseTitle}>{phase.title}</h4>
+                </div>
+                <div className={styles.phaseContent}>
+                  <div className={styles.focusArea}>
+                    <span className={styles.focusLabel}>Focus Area:</span>
+                    <span className={styles.focusText}>{phase.focus}</span>
+                  </div>
+                  <div className={styles.skillsList}>
+                    {phase.skills.map((skill, i) => (
+                      <div key={i} className={styles.skillItem}>
+                        <span className={styles.checkmark}></span>
+                        <span>{skill}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className={styles.milestone}>
+                    <span className={styles.milestoneLabel}>Key Achievement:</span>
+                    <span className={styles.milestoneText}>{phase.milestone}</span>
+                  </div>
                 </div>
               </div>
             ))}

@@ -9,7 +9,7 @@ function Hero() {
           Project Manager & Product Designer
         </p>
         <p className={styles.description}>
-          Blending strategy, design, and execution to deliver user-centered digital solutions.
+          Leading Projects at the Intersection of People, Process, and Product
         </p>
         <div className={styles.cta}>
           <button 

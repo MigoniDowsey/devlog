@@ -15,14 +15,11 @@ function About() {
           </div>
           <div className={styles.text}>
             <p className={styles.intro}>
-              I'm an aspiring product designer, project manager, and consultant with a passion for 
-              creating meaningful digital experiences that solve real problems.
+              Project Manager and Product Designer who blends strategy, design, and execution to deliver
+user-centered digital solutions.
             </p>
             <p>
-              Through the i.c.stars program, I completed over 1,000 hours of intensive training in 
-              development, Agile methodologies, UX design, business analysis, and leadership. I led 
-              cross-functional teams, managed client projects, and developed solutions that blend 
-              strategic thinking with user-centered design.
+              I am a dedicated Project Manager who leads through strengths-based leadership, blending strategy, design, and execution to deliver user-centered digital solutions. I excel at guiding cross-functional teams, aligning stakeholders, and translating ideas into clear project plans that drive meaningful impact.
             </p>
             <p>
               I'm a people person who leads with empathy and moves with purpose. Currently building 
