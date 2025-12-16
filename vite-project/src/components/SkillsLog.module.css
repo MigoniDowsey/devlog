@@ -1,0 +1,50 @@
+.skillsLog {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.skillsLog h2 {
+  color: var(--text-dark);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.monthSection {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--primary-pink);
+}
+
+.monthSection:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.monthSection h3 {
+  color: var(--accent-green);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.monthSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.monthSection li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.monthSection li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-pink);
+  font-size: 1.5em;
+  line-height: 1;
+}
