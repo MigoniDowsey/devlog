@@ -169,18 +169,6 @@ function MoodToMeal({ onClose }) {
       { food: 'Espresso martini and dessert', why: 'Sweet with a kick', type: 'restaurant', place: 'Cocktail bar' },
       { food: 'Charcuterie and cocktails', why: 'Classy, playful, and fun to share', type: 'restaurant', place: 'Wine bar' }
     ],
-    sexy: [
-      { food: 'Dark chocolate and red wine', why: 'Smooth, rich, indulgent', type: 'home' },
-      { food: 'Fresh figs with honey and goat cheese', why: 'Sensual and sophisticated', type: 'home' },
-      { food: 'Lobster tail with butter', why: 'Decadent and hands-on', type: 'restaurant', place: 'Steakhouse' },
-      { food: 'Chocolate mousse', why: 'Silky, sweet, seductive', type: 'restaurant' }
-    ],
-    horny: [
-      { food: 'Oysters on the half shell', why: 'Classic aphrodisiac—might as well lean in', type: 'restaurant', place: 'Seafood restaurant' },
-      { food: 'Spicy shrimp tacos', why: 'Hot, messy, satisfying', type: 'restaurant', place: 'Taco spot' },
-      { food: 'Steak and asparagus', why: 'Protein-packed and primal', type: 'home' },
-      { food: 'Fresh berries and whipped cream', why: 'Sweet, playful, indulgent', type: 'home' }
-    ],
 
     // WELLNESS & INTENTIONAL STATES
     'health-conscious': [
@@ -394,7 +382,7 @@ function MoodToMeal({ onClose }) {
               type="text"
               value={mood}
               onChange={(e) => setMood(e.target.value)}
-              placeholder="happy, tired, stressed, excited, romantic, horny..."
+              placeholder="happy, tired, stressed, excited, romantic, adventurous..."
               className={styles.input}
               required
             />
