@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { X } from 'lucide-react'
 import styles from './MoodToMeal.module.css'
 
 function MoodToMeal({ onClose }) {
@@ -367,7 +368,7 @@ function MoodToMeal({ onClose }) {
   return (
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        <button className={styles.closeBtn} onClick={onClose}>✕</button>
+        <button className={styles.closeBtn} onClick={onClose}><X size={24} /></button>
         
         <div className={styles.header}>
           <h2>MoodToMeal</h2>

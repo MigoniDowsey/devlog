@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Moon, Sun } from 'lucide-react'
 import styles from './Header.module.css'
 
 function Header({ theme, toggleTheme, onMoodToMealClick }) {
@@ -63,7 +64,7 @@ function Header({ theme, toggleTheme, onMoodToMealClick }) {
             className={styles.themeToggle}
             aria-label="Toggle theme"
           >
-            {theme === 'light' ? '🌙' : '☀️'}
+            {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
           </button>
         </nav>
       </div>

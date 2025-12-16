@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Zap, Brain, Heart, TrendingUp } from 'lucide-react'
 import styles from './Wellness.module.css'
 
 function Wellness() {
@@ -7,7 +8,7 @@ function Wellness() {
   const wellnessContent = {
     physical: {
       title: 'Physical Wellness',
-      icon: '💪',
+      icon: <Zap size={24} />,
       content: (
         <>
           <h4>My Journey with Long-Term Knee Pain</h4>
@@ -40,7 +41,7 @@ function Wellness() {
     },
     mental: {
       title: 'Mental Wellness',
-      icon: '🧠',
+      icon: <Brain size={24} />,
       content: (
         <>
           <h4>Managing Stress & Maintaining Focus</h4>
@@ -74,7 +75,7 @@ function Wellness() {
     },
     emotional: {
       title: 'Emotional Wellness',
-      icon: '❤️',
+      icon: <Heart size={24} />,
       content: (
         <>
           <h4>Building Emotional Resilience</h4>
@@ -111,7 +112,7 @@ function Wellness() {
     },
     financial: {
       title: 'Financial Wellness',
-      icon: '💰',
+      icon: <TrendingUp size={24} />,
       content: (
         <>
           <h4>Learning to Manage Money & Invest in Myself</h4>

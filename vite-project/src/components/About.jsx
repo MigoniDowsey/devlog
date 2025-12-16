@@ -1,4 +1,5 @@
 import styles from './About.module.css'
+import headshotImage from '../assets/Migoni.D - Headshot.png'
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
         <div className={styles.content}>
           <div className={styles.imageWrapper}>
             <img 
-              src="https://www.plantshop.me/media/product/peony_seeeds.jpg" 
+              src={headshotImage} 
               alt="Migoni Dowsey"
               className={styles.profileImage}
             />
